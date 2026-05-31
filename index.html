@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Suru Vishal | Portfolio</title>
+<title>Suru Vishal Portfolio</title>
 
 <style>
 *{
@@ -16,13 +16,23 @@
 body{
     background:#f4f6f9;
     color:#333;
+    line-height:1.6;
 }
 
 header{
-    background:#0d47a1;
+    background:linear-gradient(135deg,#0d6efd,#0047ab);
     color:white;
     text-align:center;
     padding:60px 20px;
+}
+
+.profile-pic{
+    width:180px;
+    height:180px;
+    border-radius:50%;
+    object-fit:cover;
+    border:5px solid white;
+    margin-bottom:20px;
 }
 
 header h1{
@@ -30,60 +40,48 @@ header h1{
 }
 
 header p{
-    margin-top:10px;
     font-size:18px;
+    margin-top:10px;
 }
 
-nav{
-    background:#1565c0;
-    padding:15px;
-    text-align:center;
+.container{
+    width:90%;
+    max-width:1100px;
+    margin:auto;
+    padding:30px 0;
 }
 
-nav a{
-    color:white;
-    text-decoration:none;
-    margin:0 15px;
-    font-weight:bold;
-}
-
-section{
-    max-width:1000px;
-    margin:40px auto;
-    padding:20px;
-}
-
-.card{
+.section{
     background:white;
     padding:25px;
-    border-radius:12px;
-    box-shadow:0 2px 8px rgba(0,0,0,0.1);
     margin-bottom:20px;
+    border-radius:10px;
+    box-shadow:0 2px 10px rgba(0,0,0,0.1);
 }
 
-h2{
-    color:#0d47a1;
+.section h2{
+    color:#0d6efd;
     margin-bottom:15px;
 }
 
-.skills{
-    display:flex;
-    flex-wrap:wrap;
-    gap:10px;
+ul{
+    padding-left:20px;
 }
 
-.skill{
-    background:#0d47a1;
-    color:white;
-    padding:8px 15px;
-    border-radius:20px;
+.project{
+    margin-bottom:15px;
+}
+
+.contact a{
+    color:#0d6efd;
+    text-decoration:none;
 }
 
 footer{
-    background:#0d47a1;
-    color:white;
     text-align:center;
-    padding:20px;
+    background:#222;
+    color:white;
+    padding:15px;
 }
 </style>
 </head>
@@ -91,109 +89,92 @@ footer{
 <body>
 
 <header>
+
+    <!-- Replace YOUR_IMAGE_LINK_HERE with your image link
+         OR replace it with your image file name like vishal.jpg -->
+
+    <img src="myprofile.jpeg" alt="SuruVishal Profile" style="width: 150px; height: 150px; border-radius: 50%; border: 5px solid white; margin-bottom: 20px;">
+
     <h1>Suru Vishal</h1>
     <p>Electronics & Communication Engineering Student</p>
-    <p>VLSI | Embedded Systems | Python Programmer</p>
+    <p>Embedded Systems | Python | VLSI | Web Development | AI</p>
+
 </header>
 
-<nav>
-    <a href="#about">About</a>
-    <a href="#education">Education</a>
-    <a href="#skills">Skills</a>
-    <a href="#projects">Projects</a>
-    <a href="#certifications">Certifications</a>
-    <a href="#contact">Contact</a>
-</nav>
+<div class="container">
 
-<section id="about">
-    <div class="card">
+    <section class="section">
         <h2>About Me</h2>
         <p>
-            I am an Electronics and Communication Engineering student with a strong interest in
-            VLSI Design, Embedded Systems, and Hardware Development. I enjoy working with
-            microcontrollers, digital electronics, and programming languages such as Python and C.
-            My goal is to build innovative solutions in semiconductor and embedded technology.
+            I am an Electronics and Communication Engineering student
+            passionate about Embedded Systems, Python Programming,
+            Artificial Intelligence, VLSI Design and Web Development.
+            I enjoy building projects and continuously improving my
+            technical skills.
         </p>
-    </div>
-</section>
+    </section>
 
-<section id="education">
-    <div class="card">
+    <section class="section">
         <h2>Education</h2>
+        <ul>
+            <li>B.Tech - Electronics and Communication Engineering</li>
+            <li>Add Your College Name</li>
+            <li>Add Graduation Year</li>
+        </ul>
+    </section>
 
-        <h3>B.Tech - Electronics & Communication Engineering</h3>
-        <p>Swarnandhra College of Engineering and Technology (JNTUK)</p>
-        <p>Expected Graduation: 2027</p>
+    <section class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li>Python Programming</li>
+            <li>HTML & CSS</li>
+            <li>Embedded Systems</li>
+            <li>VLSI Basics</li>
+            <li>Git & GitHub</li>
+            <li>Problem Solving</li>
+        </ul>
+    </section>
 
-        <br>
-
-        <h3>Intermediate (MPC)</h3>
-        <p>Carmel Junior College</p>
-
-        <br>
-
-        <h3>SSC</h3>
-        <p>Government High School</p>
-    </div>
-</section>
-
-<section id="skills">
-    <div class="card">
-        <h2>Technical Skills</h2>
-
-        <div class="skills">
-            <span class="skill">Python</span>
-            <span class="skill">C Programming</span>
-            <span class="skill">Embedded Systems</span>
-            <span class="skill">Microcontrollers</span>
-            <span class="skill">Digital Electronics</span>
-            <span class="skill">VLSI Basics</span>
-            <span class="skill">PCB Design</span>
-            <span class="skill">MATLAB</span>
-            <span class="skill">DSCH</span>
-            <span class="skill">Microwind</span>
-            <span class="skill">TASM</span>
-            <span class="skill">Digital Logic Design</span>
-        </div>
-    </div>
-</section>
-
-<section id="projects">
-    <div class="card">
+    <section class="section">
         <h2>Projects</h2>
 
-        <h3>Glass Cleaning Robot</h3>
-        <p>
-            Developed a Glass Cleaning Robot as part of a Hackathon project.
-            Focused on automation concepts and practical engineering problem solving.
-        </p>
-    </div>
-</section>
+        <div class="project">
+            <h3>Portfolio Website</h3>
+            <p>Developed a responsive portfolio website using HTML and CSS.</p>
+        </div>
 
-<section id="certifications">
-    <div class="card">
+        <div class="project">
+            <h3>Python Calculator</h3>
+            <p>Built a calculator application performing arithmetic operations.</p>
+        </div>
+
+        <div class="project">
+            <h3>CodSoft Internship Projects</h3>
+            <p>Completed multiple Python projects during internship tasks.</p>
+        </div>
+
+    </section>
+
+    <section class="section">
         <h2>Certifications</h2>
-
         <ul>
-            <li>NPTEL - Cloud Computing Certification</li>
-            <li>NIELIT - Embedded Systems Certification</li>
-            <li>MindLuster - Embedded Systems Training (10 Hours)</li>
+            <li>Python Programming Internship - CodSoft</li>
+            <li>VLSI System on Chip Design Overview</li>
+            <li>Add More Certifications</li>
         </ul>
-    </div>
-</section>
+    </section>
 
-<section id="contact">
-    <div class="card">
-        <h2>Contact Me</h2>
+    <section class="section contact">
+        <h2>Contact</h2>
+        <p>Email: suruvishal33@gmail.com</p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/suru-vishal" target="_blank">LinkedIn Profile</a></p>
+        <p>GitHub: <a href="https://github.com/suru-vishal" target="_blank">GitHub Profile</a></p>
+    </section>
 
-        <p><strong>Email:</strong> suruvishal33@gmail.com</p>
-        <p><strong>Location:</strong> Narasapur, Andhra Pradesh, India</p>
-        <p><strong>LinkedIn:</strong> www.linkedin.com/in/vishal-suru-6a5a95375</p>
-    </div>
-</section>
+</div>
 
 <footer>
-    <p>© 2026 Suru Vishal | Portfolio Website</p>
+    <p>© 2026 Vishal. All Rights Reserved.</p>
 </footer>
 
 </body>
