@@ -62,11 +62,11 @@ portfolio-website/
 
 ## Connect With Me
 
-LinkedIn: https://www.linkedin.com/in/your-profile
+LinkedIn: https://www.linkedin.com/in/vishal-suru-6a5a95375?utm_source=share_via&utm_content=profile&utm_medium=member_android
 
-GitHub: https://github.com/your-username
+GitHub: https://github.com/SuruVishal/CodeSoft.git
 
-Email: your-email@example.com
+Email: suruvishal33@gmail.com
 
 ## Author
 
